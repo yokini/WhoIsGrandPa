@@ -68,7 +68,7 @@ public class SceneController : MonoBehaviour
     private MainCard _secondRevealed;
 
     private int _score = 0;
-    //[SerializeField] private TextMesh scoreLabel;
+
 
     public bool canReveal
     {
@@ -94,8 +94,7 @@ public class SceneController : MonoBehaviour
         if (_firstRevealed.id == _secondRevealed.id)
         {
             _score++;
-            //scoreLabel.text = "Score: " + _score;
-            //Debug.Log(_score);
+
         }
 
         else
