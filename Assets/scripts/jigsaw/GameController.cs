@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class GameController : MonoBehaviour
     GameObject[,] ImageKeyMatrix;
     GameObject[,] ImageOfPictureMatrix;
     GameObject[,] CheckPointMatrix;
+  
 
 
     // Start is called before the first frame update
@@ -168,6 +170,7 @@ public class GameController : MonoBehaviour
                 gameIsComplete = true;
 
                 Debug.Log("Complete");
+                //  SceneManager.LoadScene("nextscene");
 
             }
             else
