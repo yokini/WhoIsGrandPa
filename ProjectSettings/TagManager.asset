@@ -7,6 +7,10 @@ TagManager:
   - green
   - black
   - red
+  - guitar
+  - glove
+  - pendant
+  - grandpa
   layers:
   - Default
   - TransparentFX
