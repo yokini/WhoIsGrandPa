@@ -113,7 +113,7 @@ public class SceneController : MonoBehaviour
         if (_score==4)
         {
             Debug.Log("win");
-            //  SceneManager.LoadScene("nextscene");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
     }

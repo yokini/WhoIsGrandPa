@@ -170,7 +170,8 @@ public class GameController : MonoBehaviour
                 gameIsComplete = true;
 
                 Debug.Log("Complete");
-                //  SceneManager.LoadScene("nextscene");
+               // yield return new WaitForSeconds(5);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             }
             else

@@ -10,31 +10,22 @@ public class pathflip : MonoBehaviour
 
     [SerializeField] private GameObject Card_Back;
 
-    public void OnMouseDown()
-    {
-
-       
-
-     Card_Back.SetActive(true);
-            
-    if(gameObject.tag == "red")
-        {
-            SceneManager.LoadScene("tiptoe");
-        }
-
-    }
+   
     
     void Start()
     {
         Card_Back.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnMouseDown()
     {
 
+        Card_Back.SetActive(true);
 
-      
+        if (gameObject.tag == "red")
+        {
+            SceneManager.LoadScene("trial");
+        }
 
     }
 }
